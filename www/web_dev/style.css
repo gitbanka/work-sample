@@ -1,0 +1,92 @@
+body{
+	background-color: #7a7a7a;
+}
+div.container{
+
+	border: 5px solid black;
+	background: linear-gradient(to left,#4e4e4e,white);
+	margin-left: 70px;
+	padding:30px;
+	position: fixed;
+	width: 80%;
+	height:70%;
+	overflow: auto;
+	border-radius:10px;
+}
+
+h1{
+
+	color: white;
+	margin-top: 20px;
+	text-align: center;
+	text-decoration: underline;
+}
+h2{
+	font-weight: bold;
+	text-decoration: underline;
+	font-family: arial;
+}
+h3{
+	color:white;
+	text-align: right;
+	margin-top: 0px;
+	
+}
+
+a.types{
+	text-decoration: none;
+	font-weight: bold;
+	color:black;
+	font-size: 18px;
+	font-family: cursive;
+}
+a.types:hover{
+
+	color:#2172ff;
+	font-size: 23px;
+	transition:all 0.3s ease;
+}
+
+div.questions{
+
+	font-weight: bold;
+	font-family: cursive;
+	background-color:white;
+	padding:10px;
+	border-radius:20px;
+}
+
+input.btn{
+
+	width: 200px;
+	background-color:#3f5165;
+	height:50px;
+	width: 300px;	
+	font-size: 20px;
+	outline:none;
+	border:none;
+	border-radius:10px;
+	padding:5px;
+	font-family: sans-serif;
+	color:white;
+}
+input.btn:hover{
+	cursor:pointer;
+	border-bottom: 7px solid #2172ff;
+	font-size: 25px;
+	transition:all 0.5s ease;
+
+
+}
+span.correct{
+	
+	color: green;
+	font-size: 20px;
+	font-weight: bold;
+}
+span.incorrect{
+
+	color: red;
+	font-size: 20px;
+	font-weight: bold;
+}

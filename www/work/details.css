@@ -1,0 +1,48 @@
+
+*
+{
+	text-align: center;
+	background-color: #784569;
+}
+table
+{
+	border:2px solid green;
+	padding:5px;
+	width:500px;
+	background-color: green;
+	margin-left:30%;
+}
+h1
+{
+	color:white;
+
+}
+td
+{
+		border:2px solid yellow;
+		padding:10px;
+		color:red;
+		background-color: yellow;
+
+}
+th{
+	color:white;
+}
+label{
+	color:white;
+	font-size: 1em;
+	font-weight: bold;
+}
+input{
+
+	color:white;
+}
+.btn{
+
+	background-color: red;
+
+}
+.btn:hover{
+
+	background-color:green;
+}

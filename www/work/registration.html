@@ -1,0 +1,131 @@
+<!--?php
+	if(isset($_POST['bt']))
+	{
+		$id=$_POST['did'];
+		$dn=$_POST['d_name'];
+		$loc=$_POST['d_loc'];
+		$cn=mysqli_connect('localhost','root',null,'adventure');
+		if(!$cn)
+			echo "Connect failed";
+		else
+			echo "Connect done";
+		$sql="call EditDept($id,'$dn','$loc');";
+		$r=mysqli_query($cn,$sql);
+		if($r==1)
+			echo "Success";
+		else
+			echo "Failed to Work";
+
+
+
+
+	}
+given the names of different tags that required for method POST.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>simple registration form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="simple-form">
+        <form method="post" action="login.php" id="registration">
+            
+	<h1>Register Here</h1>
+	<table>
+    
+        <tr>
+			<td>
+				First Name :
+			</td>
+			<td>
+				<input type="text" placeholder="Enter your First Name" name="firstname" required="true">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Last Name :
+			</td>
+			<td>
+				<input type="text" placeholder="Enter your Last Name" name="lastname" required="true">
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				Gender :
+			</td>
+			<td>
+				<input type="radio" name="gender" value="Male" required="true">Male
+				<input type="radio" name="gender" value="Fem*ale" required="true">Female
+				<input type="radio" name="gender" value="Other" required="true">Other
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Email :
+			</td>
+			<td>
+				<input type="mail" placeholder="Enter Email" name="email" required="true">
+			</td>
+		</tr>
+		<tr>	
+			<td>
+				Confirm Email :
+			</td>
+			<td>
+				<input type="Confirm Email" placeholder="Confirm Email" name="cemail" required="true">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				password :
+			</td>
+			<td>
+				<input type="password"  placeholder="Enter Password" name="password" required="true">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Re Enter password :
+			</td>
+			<td>
+				<input type="password" placeholder="Re Enter Password" name="repassword" required="true">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Phone No :
+			</td>
+			<td>
+				<select name="code" required="true">
+					 <option>91</option>
+					 <option>92</option>
+					 <option>93</option>
+					 <option>94</option>
+					 <option>95</option>
+					 <option>96</option>
+					 <option>97</option>
+					 <option>98</option>
+				</select>
+				<input type="Phone No" placeholder="Enter your mobile no..." name="phoneno" required="true">
+			</td>
+		</tr>
+        <tr>
+            <td colspan="2">
+                <input type="checkbox" id="check" required="true"><br>
+                <span id="check">I agree all the details </span>   
+            </td>
+        </tr>
+		<tr>
+			<td>
+				<input type="Submit" value="Submit" name="btn">
+			</td>
+		</tr>
+        </table>
+         
+</form>
+</div>
+</body>
+</html>

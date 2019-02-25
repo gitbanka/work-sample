@@ -1,0 +1,94 @@
+/*
+
+fixed the gap between different fields
+made the color combination better
+adjusted the width and height of different fields
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right,#00ff7f,#7fffd4);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    text-align: center;
+}
+.simple-form{
+    text-align: center;
+    margin: 5px 6px;
+    }
+#registration{
+    margin: auto;
+    width: 370px;
+    height: auto;
+    text-align: center;
+    color: #008000;
+    background-color:#87ceef;
+    border: 2px solid blue;
+    border-radius:10px;
+    padding: 5px;
+}
+h1{
+    padding: 20px;
+}
+#text{
+    text-align: center;
+    width: 40%;
+    padding: 5px;
+    border-radius: 5px;
+    border:1px solid white;
+    outline: 0;
+    font-family: serif;
+    font-size: 18px;
+}
+.simple-form[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #666666;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+td{
+    color:#00008b;
+    font-weight: bold;
+    padding:10px;
+}
+table{
+    border-collapse: collapse;
+}
+input{
+
+    height:30px;
+    border-radius:5px;
+    border:none;
+    padding:5px;
+    background-color: #c6e2ff;
+}
+select{
+        background-color: #c6e2ff;
+        color:#00008b;
+        font-weight: bold;
+
+}
+input[type='submit']{
+
+    background-color: red;
+    color: white;
+    width: 130px;
+    height: 30px;
+    font-weight: bold;
+
+}
+input[type='submit']:hover{
+
+    background-color: green;
+    transition:all 0.5s ease;
+}

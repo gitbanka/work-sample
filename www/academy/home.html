@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>school home page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="header">
+			<img class="logo" src="ball1.jpg">
+		<div class="heading">	
+			<h1>INSTITUTE OF ENGINEERING AND MANAGEMENT</h1>
+			<h3>Under KGF groups pvt.ltd</h3>
+			<h5>- - - - - -Where dreams meet reality- - - - - -</h5>
+		</div>
+	</div>
+	<br><br>
+	<form method="post" action="registration.php">
+		<table>
+			<tr>
+				<td><label class="name">First Name :</label></td>
+				<td><input type="text" name="firstname" placeholder="Jhon"></td>
+				<td><label>Last Name :</label></td>
+				<td><input type="text" name="lastname" placeholder="Deo"></td>
+				
+			</tr>
+			<tr>
+				<td><label>Contact :</label></td>
+				<td>
+					<select>
+						<option>Select</option>
+						<option>+91</option>
+						<option>+13</option>
+						<option>+10</option>
+						<option>+17</option>
+						<option>+00</option>
+						<option>+16</option>
+						<option>+21</option>
+						<option>+34</option>
+						<option>+27</option>
+						<option>+14</option>
+					</select>
+					<input type="text" name="contact" placeholder="1324567890">
+				</td>
+					<td><label>Course :</label></td>
+					<td><select>
+						<option>Select</option>
+						<option>B.TECH</option>
+						<option>M.TECH</option>
+						<option>PhD</option>
+						<option>BSC</option>
+						<option>MSC</option>
+						<option>BCA</option>
+						<option>MCA</option>
+						</select>
+					</td>
+			</tr>
+			<tr>
+				<td><label>Department :</label></td>
+				<td><select>
+						<option>Select</option>
+						<option>Biotechnology</option>
+						<option>Civil Engineering</option>
+						<option>Chemical Engineering</option>
+						<option>Computer Science & Engineering</option>
+						<option>Electronics & Communication</option>
+						<option>Electrical Engineering</option>
+						<option>Mechanical Engineering</option>
+						</select>
+				<td><label>Gender :</label></td>
+			<td>
+				<input type="radio" name="gender" value="Male" required="true">Male
+				<input type="radio" name="gender" value="Fem*ale" required="true">Female
+				<input type="radio" name="gender" value="Other" required="true">Other
+			</td>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="submit" name="btn" value="Register"></td>
+				
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
